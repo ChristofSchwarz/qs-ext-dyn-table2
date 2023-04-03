@@ -1,0 +1,29 @@
+{
+	"qListObjectDef": {
+		"qDef": {
+			"qFieldDefs": ["{{field}}"],
+			"qFieldLabels": [""],
+			"qSortCriterias": [
+				{
+					"qSortByState": 1,
+					"qSortByLoadOrder": 1,
+					"qSortByNumeric": 1,
+					"qSortByAscii": 1
+				}
+			],
+			"autoSort": true
+		},
+		"qOtherTotalSpec": {},
+		"qShowAlternatives": true
+	},
+	"showTitles": true,
+	"title": {"qStringExpression": {"qExpr": "{{title}}"}},
+	"subtitle": "",
+	"footnote": "",
+	"disableNavMenu": false,
+	"showDetails": false,
+	"showDetailsExpression": false,
+	"qStateName": "",
+	"qInfo": {"qType": "listbox"},
+	"visualization": "listbox"
+}

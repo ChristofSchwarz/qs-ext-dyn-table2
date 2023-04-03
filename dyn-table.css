@@ -1,0 +1,158 @@
+/* CSS */
+.dynt-table td {
+    vertical-align: top;
+}
+
+.dynt-table th {
+    text-align: left;
+    position: sticky;
+    top: 0;
+}
+
+.dynt-table th:first-of-type,
+.dynt-table td:first-of-type {
+    width: 55px;
+    text-align: center;
+}
+
+.dynt-cat-select {
+    width: 40%;
+    margin-right: 4px;
+    float: right;
+}
+
+.dynt-unknown-field {
+    color: red;
+}
+
+.dynt-sorticon {
+    width: 22px;
+    cursor: pointer;
+    float: left;
+}
+
+.dynt-sorticon-desc {
+    position: absolute;
+    top: 11px;
+}
+
+.dynt-table .lui-select {
+    background-color: white;
+}
+
+.dynt-right-header .lui-button {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dynt-right-object .qv-object-header {
+    display: none;
+}
+
+.dynt-busy {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    background: white;
+    height: 100%;
+    opacity: 0.5;
+    text-align: center;
+}
+
+.dynt-clearbtn {
+    cursor: pointer;
+}
+
+.dynt-table .lui-icon--draggable {
+    margin-right: 6px;
+    cursor: grabbing;
+}
+
+.dynt-table td {
+    border-bottom: 1px solid #eee;
+}
+
+tr.is-dragging {
+    background: #ccc;
+}
+
+.draggable-table__drag {
+    font-weight: lighter;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #f1f1f1;
+    z-index: 10;
+    /* opacity: 1; */
+}
+
+.draggable-table {
+    border-collapse: collapse;
+    /* background: yellow;   */
+}
+
+.dynt-measure-tag {
+    background-color: rgb(43, 159, 226);
+    color: white;
+    border-radius: 10px;
+    padding: 0 6px 0 6px;
+    margin-left: 10px;
+    font-size: 11px;
+}
+
+.dynt-left-footer {
+    padding-left: 2px;
+    padding-top: 1px;
+}
+
+.dynt-left-footer a {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.dynt-qlik-no {
+    /* opacity: 0.4; */
+    color: lightgrey;
+}
+
+.dynt-minimize-icon {
+    position: absolute;
+    z-index: 10;
+    top: calc(50%);
+    background-color: rgba(255,255,255 0.7);
+    padding: 5px 5px 5px 0;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+.dynt-filterparent {
+    width: 40%;
+    height: 28px;
+    float: left;
+}
+
+.dynt-sel-all-parent {
+    float: left;
+}
+
+.dynt-sel-all-parent button {
+    width: 18px;
+    height: 18px;
+    min-width: unset;
+    padding: unset;
+    background-color: white;
+}
+
+.dynt-clearfilter {
+    width: 25px;
+    cursor: pointer;
+    text-align: center;
+    float: left;
+}
+
+.dynt-resizer-div {
+    width: 4px;
+    border-left: 1px solid #ddd;
+    cursor: col-resize;
+}

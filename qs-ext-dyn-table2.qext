@@ -1,0 +1,15 @@
+{
+	"name": "/\\Dyn.Table2",
+	"description": "Basic empty visualization template",
+	"type": "visualization",
+	"version": "0.5.100",
+	"icon": "high-resolution",
+	"author": "",
+	"homepage": "",
+	"keywords": "qlik-sense, visualization",
+	"license": "",
+	"repository": "",
+	"dependencies": {
+		"qlik-sense": ">=3.0.x"
+	}
+}

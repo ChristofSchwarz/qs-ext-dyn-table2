@@ -1,0 +1,132 @@
+<div id="parent-{{ownId}}" style="display: flex; height: 100%;">
+	<div id="left-{{ownId}}" style="width:calc(50% - 2px);">
+		<div class="dynt-busy" style="display:none;">
+			<img src="../extensions/qs-ext-dyn-table2/loader.gif" />
+		</div>
+		<div style="height:calc(100% - 25px); overflow-y:auto; clear: both;">
+			<table id="dynt-table-{{ownId}}" class="dynt-table draggable-table">
+				<thead>
+					<tr>
+						<th>
+							<div id="sort-1-{{ownId}}" class="dynt-sorticon" title="sort selected first">
+								<span class="lui-icon  lui-icon--triangle-top"></span>
+							</div>
+							<div class="dynt-sel-all-parent">
+								<button id="sel-all-{{ownId}}" class="lui-button" title="Select All">*
+								</button>
+							</div>
+						</th>
+						<th>
+							<div id="sort-3-{{ownId}}" class="dynt-sorticon" title="Sort descending">
+								<span class="lui-icon  lui-icon--triangle-top"></span>
+							</div>
+							<div id="sort-2-{{ownId}}" class="dynt-sorticon dynt-sorticon-desc" title="sort ascending">
+								<span class="lui-icon  lui-icon--triangle-bottom"></span>
+							</div>
+							<div id="filter1-{{ownId}}" class="dynt-filterparent">
+							</div>
+							<div id="clear-filter1-{{ownId}}" class="dynt-clearfilter">
+								<span class="lui-icon  lui-icon--remove" style="display:none;"></span>
+							</div>
+							<div id="categories-{{ownId}}" class="dynt-cat-select" style="display:none;">
+								<select class="lui-select">
+									<!-- <option value="*">*</option> -->
+								</select>
+							</div>
+						</th>
+					</tr>
+				</thead>
+				<tbody id="tbody-{{ownId}}">
+				</tbody>
+			</table>
+		</div>
+		<div class="dynt-left-footer" style="height:25px;">
+			<span class="lui-icon  lui-icon--small lui-icon--filter"></span>:
+			<a id="selected-fields-{{ownId}}">0</a> /
+			<a id="count-fields-{{ownId}}"></a> selected
+			<span id="clear-sel-{{ownId}}" class="lui-icon  lui-icon--remove  dynt-clearbtn"
+				title="Unselect all visible fields"></span>
+			| Total:
+			<a id="totalselected-fields-{{ownId}}">0</a> /
+			<a id="totalcount-fields-{{ownId}}"></a> selected
+			<span id="clearall-sel-{{ownId}}" class="lui-icon  lui-icon--remove  dynt-clearbtn"
+				title="Unselect all fields, even the invisible"></span>
+		</div>
+	</div>
+	<div id="resizer-{{ownId}}" class="dynt-resizer-div">
+		<div id="minimize-{{ownId}}" class="dynt-minimize-icon">
+			<span class="lui-icon  lui-icon--triangle-left"></span>
+		</div>
+		<div id="restore-{{ownId}}" class="dynt-minimize-icon" style="display:none;">
+			<span class="lui-icon  lui-icon--triangle-right"></span>
+		</div>
+	</div>
+	<div id="right-{{ownId}}" style="width:calc(50% - 2px);">
+		<div id="right-header-{{ownId}}" class="dynt-right-header">
+			<button class="lui-button" id="btn-get-{{ownId}}">
+				<span class="lui-icon  lui-icon--table"></span> Get table
+			</button>
+			<button class="lui-button" id="btn-export-{{ownId}}" style="display:none;">
+				<span class="lui-icon  lui-icon--export"></span> Export
+			</button>
+			<button class="lui-button" id="btn-save-{{ownId}}" style="display:none;">
+				<span class="lui-icon  lui-icon--save"></span> Save
+			</button>
+			<button class="lui-button" id="btn-load-{{ownId}}" style="display:none;">
+				<span class="lui-icon  lui-icon--upload"></span> Load
+			</button>
+		</div>
+		<div id="table-{{ownId}}" class="dynt-right-object" style="height: calc(100% - 30px);"></div>
+	</div>
+</div>
+<div id="msgbox-save-{{ownId}}" style="display:none;">
+	<div class="lui-modal-background"></div>
+	<div class="lui-dialog" style="width: 400px; position: absolute; left: calc(50% - 200px); top: 50px;">
+		<div class="lui-dialog__header">
+			<div class="lui-dialog__title">Save report</div>
+		</div>
+		<div class="lui-dialog__body">
+			<label class="lui-label">Report Name</label>
+			<input id="save-name-{{ownId}}" class="lui-input" />
+		</div>
+		<div class="lui-dialog__footer">
+			<button id="msgbox-save-btn-cancel-{{ownId}}" class="lui-button  lui-dialog__button">Cancel</button>
+			<button id="msgbox-save-btn-ok-{{ownId}}" class="lui-button  lui-dialog__button  close-button">OK</button>
+		</div>
+	</div>
+</div>
+<div id="msgbox-load-{{ownId}}" style="display:none;">
+	<div class="lui-modal-background"></div>
+	<div class="lui-dialog" style="width: 400px; position: absolute; left: calc(50% - 200px); top: 50px;">
+		<div class="lui-dialog__header">
+			<div class="lui-dialog__title">Load report</div>
+		</div>
+		<div class="lui-dialog__body">
+			<label class="lui-label">Report Name</label>
+			<select id="saved-list-{{ownId}}" class="lui-select">
+			</select>
+			<div style="float:right;">
+				<span id="icon-delete-{{ownId}}" class="lui-icon  lui-icon--bin" style="cursor:pointer;"></span>
+			</div>
+		</div>
+		<div class="lui-dialog__footer">
+			<button id="msgbox-load-btn-cancel-{{ownId}}" class="lui-button  lui-dialog__button">Cancel</button>
+			<button id="msgbox-load-btn-ok-{{ownId}}" class="lui-button  lui-dialog__button  close-button">OK</button>
+		</div>
+	</div>
+</div>
+<div id="msgbox-delete-{{ownId}}" style="display:none;">
+	<div class="lui-modal-background"></div>
+	<div class="lui-dialog" style="width: 400px; position: absolute; left: calc(50% - 200px); top: 50px;">
+		<div class="lui-dialog__header">
+			<div class="lui-dialog__title">Delete report</div>
+		</div>
+		<div class="lui-dialog__body">
+			Are you sure you want to delete report &quot;<span id="txt-delete-{{ownId}}"></span>&quot;?
+		</div>
+		<div class="lui-dialog__footer">
+			<button id="msgbox-delete-btn-cancel-{{ownId}}" class="lui-button  lui-dialog__button">Cancel</button>
+			<button id="msgbox-delete-btn-ok-{{ownId}}" class="lui-button  lui-dialog__button  close-button">OK</button>
+		</div>
+	</div>
+</div>
